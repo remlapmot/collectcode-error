@@ -367,9 +367,17 @@ summarize price gpm</code></pre>
 -------------+---------------------------------------------------------
        price |         74    6165.257    2949.496       3291      15906
          gpm |         74    .0501928    .0127986   .0243902   .0833333</code></pre>
+<pre class="r"><code>list.files()</code></pre>
+<pre><code> [1] &quot;collectcode-error.Rproj&quot; &quot;profile.do&quot;              &quot;README.md&quot;              
+ [4] &quot;render.R&quot;                &quot;test-knitr-1.44.html&quot;    &quot;test-knitr-1.44.md&quot;     
+ [7] &quot;test-knitr-1.45.html&quot;    &quot;test-knitr-1.45.md&quot;      &quot;test-knitr-devel.html&quot;  
+[10] &quot;test-knitr-devel.md&quot;     &quot;test.Rmd&quot;               </code></pre>
 <p>A second, later code block:</p>
-<pre class="stata"><code>regress price gpm</code></pre>
-<pre><code>      Source |       SS           df       MS      Number of obs   =        74
+<pre class="stata"><code>ls profile.do
+regress price gpm</code></pre>
+<pre><code>-rw-r--r--  1 tom  staff  53 Nov  6 16:11 profile.do
+
+      Source |       SS           df       MS      Number of obs   =        74
 -------------+----------------------------------   F(1, 72)        =     35.95
        Model |   211486574         1   211486574   Prob &gt; F        =    0.0000
     Residual |   423578822        72  5883039.19   R-squared       =    0.3330
