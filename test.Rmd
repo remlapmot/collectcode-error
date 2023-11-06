@@ -16,8 +16,13 @@ generate gpm = 1/mpg
 summarize price gpm
 ```
 
+```{r}
+list.files()
+```
+
 A second, later code block:
-```{stata second-Stata} 
+```{stata second-Stata}
+ls profile.do
 regress price gpm
 ```
 
