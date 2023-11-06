@@ -1,0 +1,26 @@
+---
+title: Example problem with collectcode chunk option under knitr 1.45
+output:
+  html_document:
+    self_contained: true
+---
+
+```{r}
+library(Statamarkdown)
+```
+
+A first code block:
+```{stata first-Stata, collectcode=TRUE} 
+sysuse auto
+generate gpm = 1/mpg
+summarize price gpm
+```
+
+A second, later code block:
+```{stata second-Stata} 
+regress price gpm
+```
+
+```{r}
+xfun::session_info('knitr')
+```
