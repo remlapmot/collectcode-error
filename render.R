@@ -33,3 +33,7 @@ rmarkdown::render("test.Rmd", output_file = "test-knitr-8725408.md", output_form
 # Error
 remotes::install_github("yihui/knitr@c0dcdef")
 rmarkdown::render("test.Rmd", output_file = "test-knitr-c0dcdef.md", output_format = "github_document")
+
+# Error
+remotes::install_github("yihui/knitr@4307aed")
+rmarkdown::render("test.Rmd", output_file = "test-knitr-4307aed.md", output_format = "github_document")
