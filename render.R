@@ -17,3 +17,7 @@ rmarkdown::render("test.Rmd", output_file = "test-knitr-devel.md", output_format
 # No error
 remotes::install_github("yihui/knitr@8737af7")
 rmarkdown::render("test.Rmd", output_file = "test-knitr-8737af7.md", output_format = "github_document")
+
+# No error
+remotes::install_github("yihui/knitr@b558369")
+rmarkdown::render("test.Rmd", output_file = "test-knitr-b558369.md", output_format = "github_document")
