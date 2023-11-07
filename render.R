@@ -12,3 +12,8 @@ rmarkdown::render("test.Rmd", output_file = "test-knitr-1.45.md", output_format 
 remotes::install_github("yihui/knitr")
 # rmarkdown::render("test.Rmd", output_file = "test-knitr-devel.html")
 rmarkdown::render("test.Rmd", output_file = "test-knitr-devel.md", output_format = "github_document")
+
+# Test under specific commits
+# No error
+remotes::install_github("yihui/knitr@8737af7")
+rmarkdown::render("test.Rmd", output_file = "test-knitr-8737af7.md", output_format = "github_document")
