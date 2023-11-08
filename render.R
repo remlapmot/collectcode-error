@@ -55,3 +55,6 @@ rmarkdown::render("test.Rmd", output_file = "test-knitr-09db6b2.md", output_form
 # Add commits onto ba8d9fb
 rstudioapi::restartSession()
 rmarkdown::render("test.Rmd", output_file = "test-knitr-commits-1.md", output_format = "github_document")
+
+rstudioapi::restartSession()
+rmarkdown::render("test.Rmd", output_file = "test-knitr-commits-2.md", output_format = "github_document")
