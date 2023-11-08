@@ -64,3 +64,6 @@ rmarkdown::render("test.Rmd", output_file = "test-knitr-commits-3.md", output_fo
 
 rstudioapi::restartSession()
 rmarkdown::render("test.Rmd", output_file = "test-knitr-commits-4.md", output_format = "github_document")
+
+rstudioapi::restartSession()
+rmarkdown::render("test.Rmd", output_file = "test-knitr-commits-5.md", output_format = "github_document")
