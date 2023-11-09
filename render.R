@@ -70,3 +70,18 @@ rmarkdown::render("test.Rmd", output_file = "test-knitr-commits-5.md", output_fo
 
 rstudioapi::restartSession()
 rmarkdown::render("test.Rmd", output_file = "test-knitr-commits-6.md", output_format = "github_document")
+
+rstudioapi::restartSession()
+rmarkdown::render("test.Rmd", output_file = "test-knitr-tp-statamarkdown.md", output_format = "github_document")
+
+remotes::install_version('knitr', '1.45')
+rstudioapi::restartSession()
+rmarkdown::render("test.Rmd", output_file = "test-knitr-1-45-tp-statamarkdown.md", output_format = "github_document")
+
+remotes::install_version('knitr', '1.44')
+rstudioapi::restartSession()
+rmarkdown::render("test.Rmd", output_file = "test-knitr-1-44-tp-statamarkdown.md", output_format = "github_document")
+
+remotes::install_version('knitr', '1.43')
+rstudioapi::restartSession()
+rmarkdown::render("test.Rmd", output_file = "test-knitr-1-43-tp-statamarkdown.md", output_format = "github_document")
