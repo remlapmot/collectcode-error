@@ -28,4 +28,5 @@ regress price gpm
 
 ```{r}
 xfun::session_info('knitr')
+packageVersion('Statamarkdown')
 ```
