@@ -39,4 +39,5 @@ cat(paste0(readLines("profile.do"), collapse="\n"))
 
 ```{r}
 xfun::session_info('knitr')
+packageVersion('Statamarkdown')
 ```
