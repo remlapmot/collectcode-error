@@ -9,6 +9,11 @@ output:
 library(Statamarkdown)
 ```
 
+```{r}
+list.files()
+cat(paste0(readLines("profile.do"), collapse="\n"))
+```
+
 A first code block:
 ```{stata first-Stata, collectcode=TRUE} 
 sysuse auto
