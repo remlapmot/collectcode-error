@@ -28,3 +28,21 @@ rmarkdown::render("test2.Rmd", output_file = "test2-knitr-1-43-tp-statamarkdown.
 remotes::install_github('yihui/knitr')
 writeprofiledo()
 rmarkdown::render("test2.Rmd", output_file = "test2-knitr-devel-tp-statamarkdown.md", output_format = "github_document")
+
+# Check with Doug's Statamarkdown 0.9.0
+remotes::install_github('Hemken/Statamarkdown')
+
+install.packages('knitr')
+rmarkdown::render("test2.Rmd", output_file = "test2-knitr-1-45-doug-statamarkdown.md", output_format = "github_document")
+
+remotes::install_version('knitr', '1.44')
+rstudioapi::restartSession()
+rmarkdown::render("test2.Rmd", output_file = "test2-knitr-1-44-doug-statamarkdown.md", output_format = "github_document")
+
+remotes::install_version('knitr', '1.43')
+rstudioapi::restartSession()
+rmarkdown::render("test2.Rmd", output_file = "test2-knitr-1-43-doug-statamarkdown.md", output_format = "github_document")
+
+remotes::install_github('yihui/knitr')
+rstudioapi::restartSession()
+rmarkdown::render("test2.Rmd", output_file = "test2-knitr-devel-doug-statamarkdown.md", output_format = "github_document")
