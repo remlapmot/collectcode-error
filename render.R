@@ -100,3 +100,6 @@ rmarkdown::render("test.Rmd", output_file = "test-knitr-1-44-doug-statamarkdown.
 
 remotes::install_version('knitr', '1.43')
 rmarkdown::render("test.Rmd", output_file = "test-knitr-1-43-doug-statamarkdown.md", output_format = "github_document")
+
+remotes::install_github('yihui/knitr')
+rmarkdown::render("test.Rmd", output_file = "test-knitr-devel-doug-statamarkdown.md", output_format = "github_document")
