@@ -89,3 +89,7 @@ rmarkdown::render("test.Rmd", output_file = "test-knitr-1-43-tp-statamarkdown.md
 remotes::install_github('yihui/knitr')
 rstudioapi::restartSession()
 rmarkdown::render("test.Rmd", output_file = "test-knitr-devel-tp-statamarkdown.md", output_format = "github_document")
+
+install.packages('knitr')
+remotes::install_github('Hemken/Statamarkdown')
+rmarkdown::render("test.Rmd", output_file = "test-knitr-1-45-doug-statamarkdown.md", output_format = "github_document")
