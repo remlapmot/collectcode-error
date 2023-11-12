@@ -91,8 +91,9 @@ rstudioapi::restartSession()
 rmarkdown::render("test.Rmd", output_file = "test-knitr-devel-tp-statamarkdown.md", output_format = "github_document")
 
 # Check with Doug's Statamarkdown 0.9.0
-install.packages('knitr')
 remotes::install_github('Hemken/Statamarkdown')
+
+install.packages('knitr')
 rmarkdown::render("test.Rmd", output_file = "test-knitr-1-45-doug-statamarkdown.md", output_format = "github_document")
 
 remotes::install_version('knitr', '1.44')
